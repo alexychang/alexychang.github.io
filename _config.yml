@@ -1,11 +1,11 @@
-title: Alex Chang
-logo: "/images/alexchang.jpeg?>raw=true"
-description: >
+title: Alex Chang # your name (or website title) here
+logo: "/images/alexchang.jpeg?>raw=true" # your photo (or logo) here
+description: > # your text below (remove <br> elements if you don't need line breaks)
   Hi! I'm a senior at UC Berkeley studying Computer Science and Linguistics.
   <br><br>
   Let's connect!
   <br><br>
   <a href="https://www.linkedin.com/in/alex-y-chang/">Linkedin</a>
   <a href="https://github.com/alexychang">Github</a>
-
+  
 theme: jekyll-theme-minimal
