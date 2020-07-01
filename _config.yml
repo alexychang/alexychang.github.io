@@ -1,7 +1,7 @@
 theme: jekyll-theme-minimal
 
-title: Alex Chang # your name (or website title) here
-# logo: "/images/alexchang.jpeg?>raw=true" # your photo (or logo) here
+title: Alex Chang
+logo: "/images/alexchang.jpeg?>raw=true"
 # description: > # your text below (remove <br> elements if you don't need line breaks)
 #   Hi! I'm a senior at UC Berkeley studying Computer Science and Linguistics.
 #   <br><br>
