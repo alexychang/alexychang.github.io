@@ -1,4 +1,6 @@
-# title: Alex Chang # your name (or website title) here
+theme: jekyll-theme-cayman
+
+title: Alex Chang # your name (or website title) here
 # logo: "/images/alexchang.jpeg?>raw=true" # your photo (or logo) here
 # description: > # your text below (remove <br> elements if you don't need line breaks)
 #   Hi! I'm a senior at UC Berkeley studying Computer Science and Linguistics.
@@ -8,4 +10,3 @@
 #   <a href="https://www.linkedin.com/in/alex-y-chang/">Linkedin</a>
 #   <a href="https://github.com/alexychang">Github</a>
   
-theme: jekyll-theme-cayman
