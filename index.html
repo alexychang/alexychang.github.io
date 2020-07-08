@@ -2,32 +2,66 @@
 layout: default
 ---
 
-<h1 id="projects">Projects</h1>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+}
 
-<h2 id="philter">Philter Comparison</h2>
+.parallax {
+  /* The image used */
+  background-image: url("images/alexchang.jpeg");
 
-<ul>
-  <li>Designed a <strong>data pipeline and framework using Python</strong> for comparing the performance of UCSF’s clinical note de-identification
-software to an alternative algorithm in order to pinpoint notes that UCSF’s algorithm was not able to de-identify completely.</li>
-  <li>Devised a method of output comparison using <strong>numpy, scipy, and scikit-learn</strong> that flagged notes which caused the two algorithms
-to produce contrasting results over metrics such as the percentage of correctly identified PHI tokens and the <strong>cosine similarities.</strong></li>
-  <li>Created a <strong>Python script for preprocessing output files into an XML file format</strong> mimicking gold standard PHI annotations.</li>
-</ul>
+  /* Full height */
+  height: 100%;
 
-<hr />
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+</head>
+<body>
+  
+  <div class="parallax"></div>
+  
+  <div style="height:10000px;background-color:white">
 
-<h2 id="pyramid">Pyramid Scheme Simulator</h2>
+  <h1 id="projects">Projects</h1>
 
-<ul>
-  <li>Simulated a <strong>pyramid scheme using NetworkX</strong> as nodes and modeled the spread with <strong>random exponential distributions.</strong></li>
-  <li>Assisted in creating a <strong>user-facing applet with WxPython</strong> to visualize the pyramid scheme over time and to display statistics.</li>
-</ul>
+  <h2 id="philter">Philter Comparison</h2>
 
-<hr />
+  <ul>
+    <li>Designed a <strong>data pipeline and framework using Python</strong> for comparing the performance of UCSF’s clinical note de-identification
+  software to an alternative algorithm in order to pinpoint notes that UCSF’s algorithm was not able to de-identify completely.</li>
+    <li>Devised a method of output comparison using <strong>numpy, scipy, and scikit-learn</strong> that flagged notes which caused the two algorithms
+  to produce contrasting results over metrics such as the percentage of correctly identified PHI tokens and the <strong>cosine similarities.</strong></li>
+    <li>Created a <strong>Python script for preprocessing output files into an XML file format</strong> mimicking gold standard PHI annotations.</li>
+  </ul>
 
-<h2 id="bus">Bus Partition</h2>
+  <hr />
 
-<ul>
-  <li>Created an <strong>algorithm with Python approximating a NP-Hard graph problem</strong> using local search and a modified simplex.</li>
-  <li>Performed with a <strong>higher accuracy on a pool of over 600 collective inputs</strong> from the class than 75% of all other algorithms.</li>
-</ul>
+  <h2 id="pyramid">Pyramid Scheme Simulator</h2>
+
+  <ul>
+    <li>Simulated a <strong>pyramid scheme using NetworkX</strong> as nodes and modeled the spread with <strong>random exponential distributions.</strong></li>
+    <li>Assisted in creating a <strong>user-facing applet with WxPython</strong> to visualize the pyramid scheme over time and to display statistics.</li>
+  </ul>
+
+  <hr />
+
+  <h2 id="bus">Bus Partition</h2>
+
+  <ul>
+    <li>Created an <strong>algorithm with Python approximating a NP-Hard graph problem</strong> using local search and a modified simplex.</li>
+    <li>Performed with a <strong>higher accuracy on a pool of over 600 collective inputs</strong> from the class than 75% of all other algorithms.</li>
+  </ul>
+    
+  </div>
+  
+</body>
+</html>
