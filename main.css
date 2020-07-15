@@ -1,5 +1,14 @@
 /* ---------------- Main page ---------------- */
-.nav-list {
+
+/* Define colors */
+:root {
+    --black: #000000;
+    --white: #ffffff;
+    --dark-blue: #0052af;
+    --yellow: #fff455;
+}
+
+nav-list {
     list-style-type: none;
     margin: 0;
     padding: 0;
