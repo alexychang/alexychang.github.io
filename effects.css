@@ -1,0 +1,14 @@
+/* Parallax scrolling code based on: https://www.w3schools.com/howto/howto_css_parallax.asp */
+
+/* ----------------Parallax Scrolling---------------- */
+.parallax {
+    /* TODO: Change image */
+    background-image: url("images/alexchang.jpeg"); 
+  
+    height: 500px;
+  
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
