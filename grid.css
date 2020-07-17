@@ -1,11 +1,21 @@
 /* Grid layout code based on: https://www.w3schools.com/css/tryit.asp?filename=trycss3_flexbox_image_gallery */
-.grid {
+
+/* .grid {
     display: grid;
-    grid-template-columns: 250px auto 250px; /* TODO: Change this in the future */
+    grid-template-columns: 250px auto 250px;
+} */
+
+.row {
+    box-sizing: border-box; /* size of the containers will not possibly extend past boundaries if additional padding is added*/ 
+    display: flex; /* items will stretch to fit container */
+    flex-wrap: wrap; /* Whether or not the grid items wrap around: https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap */ 
+    padding: 0 8px;
+    margin: 0 auto;
 }
 
 /* Create 2 equal columns that sit next to each other */
 .column {
+    box-sizing: border-box;
     flex: 50%;
     max-width: 50%;
     padding: 0 6px; /* padding: vertical padding | horizontal padding */
@@ -14,4 +24,10 @@
 .column img {
     margin-top: 8px;
     vertical-align: middle;
+}
+
+.grid-cell {
+    width: 100%;
+    vertical-align: middle;
+    padding: 10px 10px;
 }
