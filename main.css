@@ -8,6 +8,7 @@
     --yellow: #fff455;
 }
 
+/* Header based on code from: https://www.w3schools.com/css/css_navbar_horizontal.asp */
 .nav-list {
     list-style-type: none;
     margin: 0;
