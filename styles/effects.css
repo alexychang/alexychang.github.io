@@ -3,7 +3,7 @@
 /* ----------------Parallax Scrolling---------------- */
 .parallax {
     /* TODO: Change image */
-    background-image: url("images/alexchang.jpeg"); 
+    background-image: url("../images/alexchang.jpeg"); 
   
     height: 500px;
   
