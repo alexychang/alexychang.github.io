@@ -8,6 +8,16 @@
     --yellow: #fff455;
 }
 
+body {
+    margin: 0px;
+    padding: 0px;
+    /* font-family: "Gill Sans", sans-serif;  */
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--dark-blue);
+}
+
 /* Header based on code from: https://www.w3schools.com/css/css_navbar_horizontal.asp */
 .nav-list {
     list-style-type: none;
@@ -31,4 +41,11 @@
 
 .nav-item a:hover {
     background-color: #111;
+}
+
+/* Text Formatting */ 
+
+p.about_paragraph {
+    font-size: 22px;
+    padding: 100px;
 }

@@ -21,10 +21,11 @@
     padding: 0 6px; /* padding: vertical padding | horizontal padding */
 }
 
-.grid-cell img {
+.grid-cell img { /* TODO: Don't understand why these properties are not applying to the picture when the 
+    picture is an img within the grid-cell div in index.html */
     margin-top: 8px;
     vertical-align: middle;
-    justify-content: right;
+    justify-content: right; 
 }
 
 .grid-cell {
