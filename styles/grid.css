@@ -21,13 +21,23 @@
     padding: 0 6px; /* padding: vertical padding | horizontal padding */
 }
 
-.column img {
+.grid-cell img {
     margin-top: 8px;
     vertical-align: middle;
+    justify-content: right;
 }
 
 .grid-cell {
     width: 100%;
     vertical-align: middle;
+    justify-content: center;
     padding: 10px 10px;
+}
+
+/* Responsive layout so that two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
 }
