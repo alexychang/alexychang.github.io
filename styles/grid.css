@@ -14,6 +14,11 @@
     flex-wrap: wrap; /* Whether or not the grid items wrap around: https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap */ 
     padding: 0 8px;
     margin: 0 auto;
+    align-items: center;
+}
+
+.row div{
+    border: 3px black solid;
 }
 
 /* Create 2 equal columns that sit next to each other */
@@ -21,6 +26,10 @@
     flex: 50%;
     max-width: 50%;
     padding: 0 6px; /* padding: vertical padding | horizontal padding */
+}
+
+.column div{
+    border: 3px gray solid;
 }
 
 .column img { 
@@ -33,6 +42,10 @@
     vertical-align: middle;
     justify-content: center;
     padding: 10px 10px;
+}
+
+.column div{
+    border: 3px blue solid;
 }
 
 .grid-cell img { /* TODO: Don't understand why these properties are not applying to the picture when the 
