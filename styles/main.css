@@ -47,5 +47,11 @@ body {
 
 p.about_paragraph {
     font-size: 22px;
-    padding: 100px;
+    /* padding: 100px; */
+}
+
+img.propic {
+    display: block;
+    margin-left: auto; /* This is centering the image */
+    margin-right: auto;
 }
