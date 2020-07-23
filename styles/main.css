@@ -19,7 +19,7 @@ body {
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-size: 18px;
-    color: var(--dark-blue);
+    color: var(--black);
 }
 
 /* Header based on code from: https://www.w3schools.com/css/css_navbar_horizontal.asp */

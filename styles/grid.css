@@ -1,10 +1,5 @@
 /* Grid layout code based on: https://www.w3schools.com/css/tryit.asp?filename=trycss3_flexbox_image_gallery */
 
-/* .grid {
-    display: grid;
-    grid-template-columns: 250px auto 250px;
-} */
-
 .row, .column, .grid-cell {
     box-sizing: border-box; /* size of the containers will not possibly extend past boundaries if additional padding is added*/
 }
@@ -12,50 +7,44 @@
 .row {
     display: flex; /* items will stretch to fit container */
     flex-wrap: wrap; /* Whether or not the grid items wrap around: https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap */ 
-    padding: 0 8px;
+    padding: 0 75px; /* Space from right and left to outside of element*/
     margin: 0 auto;
     align-items: center;
-}
-
-.row div{
-    border: 3px black solid;
 }
 
 /* Create 2 equal columns that sit next to each other */
 .column {
     flex: 50%;
     max-width: 50%;
-    padding: 0 6px; /* padding: vertical padding | horizontal padding */
-}
-
-.column div{
-    border: 3px gray solid;
-}
-
-.column img { 
-    vertical-align: middle;
-    justify-content: right; 
+    padding: 0 6px;
 }
 
 .grid-cell {
     width: 100%;
     vertical-align: middle;
-    justify-content: center;
-    padding: 10px 10px;
+    padding: 10px 30px;
 }
 
-.column div{
+/* For debugging purposes */
+
+/* .column div{ 
     border: 3px blue solid;
+} */
+
+.column img {
+    vertical-align: middle;
 }
 
-.grid-cell img { /* TODO: Don't understand why these properties are not applying to the picture when the 
-    picture is an img within the grid-cell div in index.html */
-    margin-top: 8px;
-    vertical-align: middle;
-    justify-content: right; 
+/* Custom widths */
+
+.intro-grid {
+    max-width: 1200px;
+
+    padding: 130px 0;
 }
 
 /* Responsive layout so that two columns stack on top of each other instead of next to each other */
+
 @media (max-width: 600px) {
     .column {
         flex: 100%;
