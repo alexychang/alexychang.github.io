@@ -8,6 +8,10 @@
     --yellow: #fff455;
 }
 
+.wrapper, .section {
+    width: 100vw;
+}
+
 body {
     margin: 0px;
     padding: 0px;
