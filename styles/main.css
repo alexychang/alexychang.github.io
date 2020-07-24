@@ -4,8 +4,11 @@
 :root {
     --black: #000000;
     --white: #ffffff;
-    --dark-blue: #0052af;
+    --blue: #1e87ff;
+    --bright-blue: #a9ddff;
+    --bright-green: #59ffb2;
     --yellow: #fff455;
+    --orange: #ff9c4a;
 }
 
 .wrapper, .section {
@@ -16,7 +19,8 @@ body {
     margin: 0px;
     padding: 0px;
     /* font-family: "Gill Sans", sans-serif;  */
-    font-family: "Montserrat", sans-serif;
+    /* font-family: "Montserrat", sans-serif; */
+    font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 400;
     font-size: 18px;
     color: var(--black);
@@ -47,6 +51,14 @@ body {
     background-color: #111;
 }
 
+img#propic { /* THIS DOESN'T WORK */
+    border: 5px black;
+}
+
+img#carat {
+    margin: 6vh auto 0vh 200px; /* vh = view height, vw = view width */
+}
+
 /* Text Formatting */ 
 
 p.about_paragraph {
@@ -54,8 +66,25 @@ p.about_paragraph {
     /* padding: 100px; */
 }
 
-img.propic {
-    display: block;
-    margin-left: auto; /* This is centering the image */
-    margin-right: auto;
+/* ---------- Text properties ---------- */
+
+h1 {
+    font-size: 50px;
+}
+
+/* Highlight code based on: https://thirtyeightvisuals.com/blog/low-highlight-heading-links-squarespace */
+.highlight-blue {
+    background: linear-gradient(180deg,rgba(255,255,255,0) 50%, var(--bright-blue) 50%);
+}
+
+.highlight-yellow {
+    background: linear-gradient(180deg,rgba(255,255,255,0) 50%, var(--yellow) 50%);
+}
+
+.highlight-green {
+    background: linear-gradient(180deg,rgba(255,255,255,0) 50%, var(--bright-green) 50%);
+}
+
+.highlight-orange {
+    background: linear-gradient(180deg,rgba(255,255,255,0) 50%, var(--orange) 50%);
 }

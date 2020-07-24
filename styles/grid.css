@@ -25,22 +25,26 @@
     padding: 10px 30px;
 }
 
-/* For debugging purposes */
-
+/******** DEBUGGING ********/
 /* .column div{ 
     border: 3px blue solid;
 } */
 
 .column img {
-    vertical-align: middle;
+    display: block; /* must be declared in order to center imgs */
+    margin: 0px auto; /* all imgs within columns are now centered within the column */
+    max-width: 100%; /* So that the image doesn't overflow */
 }
 
-/* Custom widths */
+/* ----------- Custom widths ----------- */
 
 .intro-grid {
     max-width: 1200px;
+    padding: 120px 0;
+}
 
-    padding: 130px 0;
+.intro-grid div.column {
+    padding-bottom: 60px;
 }
 
 /* Responsive layout so that two columns stack on top of each other instead of next to each other */
