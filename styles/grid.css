@@ -90,6 +90,13 @@
 .projects-grid .contentBx .content {
     position: relative;
     padding: 20px 60px;
+    opacity: 0;
+}
+
+.projects-grid .contentBx:hover .content {
+    opacity: 1;
+    transition: 0.5s;
+    transition-delay: 0.3s;
 }
 
 .projects-grid .contentBx .content h3 {
