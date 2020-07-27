@@ -38,13 +38,69 @@
 
 /* ----------- Custom widths ----------- */
 
-.intro-grid {
-    max-width: 1200px;
-    padding: 120px 0;
+.grid {
+    max-width: 1200px; /* Prevents columns from being too fat */
+    padding: 120px 0; /* Prevents columns from touching top of div element */
 }
 
-.intro-grid div.column {
+.grid div.column {
     padding-bottom: 60px;
+}
+
+.projects-grid {
+    max-width: 1200px; /* Prevents columns from being too fat */
+    padding: 120px 0; /* Prevents columsn from touching top of div element */
+}
+
+.projects-grid .column {
+    padding: 0px 10px 0px 60px; /* top right bottom left */
+}
+
+.projects-grid .grid-cell {
+    position: relative;
+    margin-bottom: 70px;
+}
+
+.projects-grid .grid-cell#intuit {
+    padding: 85px 0px 85px 0px;
+}
+
+.projects-grid .grid-cell .contentBx {
+    position: absolute;
+    top: 40px;
+    bottom: 40px;
+    right: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.95);
+    /* transformation source code: https://www.youtube.com/watch?v=Qf3pza8ZhcA */
+    transition: transform 0.5s;
+    transform-origin: right;
+    transform: scaleX(0);
+}
+
+.projects-grid .grid-cell:hover .contentBx {
+    transition: transform 0.5s; 
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.projects-grid .contentBx .content {
+    position: relative;
+    padding: 20px 60px;
+}
+
+.projects-grid .contentBx .content h3 {
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.projects-grid .contentBx .content p {
+    color: #fff;
+    font-weight: 300;
 }
 
 /* Responsive layout so that two columns stack on top of each other instead of next to each other */
