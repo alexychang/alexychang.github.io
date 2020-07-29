@@ -5,6 +5,7 @@
     --black: #000000;
     --white: #ffffff;
     --blue: #1e87ff;
+    --dark-blue: #00499c;
     --bright-blue: #a9ddff;
     --bright-green: #59ffb2;
     --yellow: #fff455;
@@ -34,11 +35,11 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: var(--blue);
 }
 
 .nav-item {
-    float: left;  /* Use float to get block elements to slide next to each other */
+    float: right;  /* Use float to get block elements to slide next to each other */
 }
 
 .nav-item a {
@@ -50,14 +51,13 @@ body {
 }
 
 .nav-item a:hover {
-    background-color: #111;
+    color: var(--dark-blue);
 }
 
 /* ---------- Intro Page ---------- */
 
 img#propic { 
-    border: solid 3px;
-    box-shadow: 12px 12px 0px var(--blue);
+    box-shadow: 12px 12px 0px var(--bright);
 }
 
 img#carat {
@@ -84,6 +84,10 @@ h1 {
 
 /* Highlight code based on: https://thirtyeightvisuals.com/blog/low-highlight-heading-links-squarespace */
 .highlight-blue {
+    background: linear-gradient(180deg,rgba(255,255,255,0) 50%, var(--blue) 50%);
+}
+
+.highlight-light-blue {
     background: linear-gradient(180deg,rgba(255,255,255,0) 50%, var(--bright-blue) 50%);
 }
 
